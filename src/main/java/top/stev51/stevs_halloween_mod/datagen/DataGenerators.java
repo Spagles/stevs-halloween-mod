@@ -30,7 +30,8 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(
                         new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK),
-                        new LootTableProvider.SubProviderEntry(ModEntityLootTableProvider::new, LootContextParamSets.ENTITY)
+                        new LootTableProvider.SubProviderEntry(ModEntityLootTableProvider::new, LootContextParamSets.ENTITY),
+                        new LootTableProvider.SubProviderEntry(ModLootTableProvider::new, LootContextParamSets.EMPTY)
                 ),
                 lookupProvider));
 

@@ -5,13 +5,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.EntityLootSubProvider;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import top.stev51.stevs_halloween_mod.entity.ModEntities;
-import top.stev51.stevs_halloween_mod.item.ModItems;
-import top.stev51.stevs_halloween_mod.loot.ModLootTables;
 
 import java.util.stream.Stream;
 
@@ -24,12 +18,12 @@ public class ModEntityLootTableProvider extends EntityLootSubProvider {
     @Override
     public void generate() {
 
-        add(ModEntities.GHOST.get(), ModLootTables.CANDY_LOOT_TABLE);
-        add(ModEntities.VAMPIRE.get(), ModLootTables.CANDY_LOOT_TABLE);
-        add(ModEntities.WEREWOLF.get(), ModLootTables.CANDY_LOOT_TABLE);
-        add(ModEntities.FRANKENSTEIN.get(), ModLootTables.CANDY_LOOT_TABLE);
-        add(ModEntities.MUMMY.get(), ModLootTables.CANDY_LOOT_TABLE);
-        add(ModEntities.DEVIL.get(), ModLootTables.CANDY_LOOT_TABLE);
+        add(ModEntities.GHOST.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.VAMPIRE.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.WEREWOLF.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.FRANKENSTEIN.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.MUMMY.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.DEVIL.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
 
     }
 
