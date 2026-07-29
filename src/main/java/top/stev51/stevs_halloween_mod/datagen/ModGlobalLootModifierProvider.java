@@ -41,15 +41,14 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 Items.PUMPKIN_SEEDS
         ));
 
-        add("my_loot_modifier_instance", new AddTableLootModifier(
+
+
+        add("candy_to_zombie", new AddTableLootModifier(
                 new LootItemCondition[] {
-                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/creeper")).build(),
-                        LootItemRandomChanceCondition.randomChance(1f).build()
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/zombie")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
                 },
-                ResourceKey.create(
-                        Registries.LOOT_TABLE,
-                        ResourceLocation.fromNamespaceAndPath(HalloweenMod.MOD_ID, "candy_loot_table")
-                )
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
         ));
 
     }

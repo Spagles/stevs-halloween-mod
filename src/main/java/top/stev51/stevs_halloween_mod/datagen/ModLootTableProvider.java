@@ -12,9 +12,13 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCon
 import top.stev51.stevs_halloween_mod.HalloweenMod;
 import top.stev51.stevs_halloween_mod.item.ModItems;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.BiConsumer;
 
 public class ModLootTableProvider implements LootTableSubProvider {
+
+    public static final Map<String, ResourceKey<LootTable>> TABLE_KEYS = new HashMap<>();
 
     public static final LootTable.Builder CANDY_LOOT_TABLE = LootTable.lootTable().withPool(
             LootPool.lootPool()
@@ -45,13 +49,15 @@ public class ModLootTableProvider implements LootTableSubProvider {
             BiConsumer<ResourceKey<LootTable>, LootTable.Builder> biConsumer,
             String path, LootTable.Builder tableBuilder
     ) {
-        biConsumer.accept(
-                ResourceKey.create(
-                        Registries.LOOT_TABLE,
-                        ResourceLocation.fromNamespaceAndPath(HalloweenMod.MOD_ID, path)
-                ),
-                tableBuilder
+
+        ResourceKey<LootTable> resourceKey = ResourceKey.create(
+                Registries.LOOT_TABLE,
+                ResourceLocation.fromNamespaceAndPath(HalloweenMod.MOD_ID, path)
         );
+
+        biConsumer.accept(resourceKey, tableBuilder);
+        TABLE_KEYS.put(path, resourceKey);
+
     }
 
 }
