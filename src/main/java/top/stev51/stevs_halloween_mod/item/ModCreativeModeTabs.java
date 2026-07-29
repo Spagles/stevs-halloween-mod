@@ -30,8 +30,8 @@ public class ModCreativeModeTabs {
 
                         // Items - Food
                         output.accept(ModItems.CANDY_APPLE);
-                        output.accept(ModItems.CARAMEL);
                         output.accept(ModItems.CARAMEL_APPLE);
+                        output.accept(ModItems.CARAMEL);
                         output.accept(ModItems.CHOCOLATE_BAR);
                         output.accept(ModItems.GUMDROP);
                         output.accept(ModItems.HARD_CANDY);

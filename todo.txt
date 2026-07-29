@@ -1,6 +1,21 @@
 BEFORE RELEASE
 - Food textures
+    - Chocolate Bar
+    - Gumdrop
+    - Hard Candy
+    - Lollipop
+    - Peanut Butter Cup
 - Mob textures
+    - Devil
+    - Monster
+    - Werewolf
+- Spawn Egg Colors
+    - Devil
+    - Ghost
+    - Monster
+    - Mummy
+    - Vampire
+    - Werewolf
 
 AFTER RELEASE
 - Crops
