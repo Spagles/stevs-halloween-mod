@@ -2,7 +2,6 @@ BEFORE RELEASE
 - Food textures
 - Mob textures
 - Title screen background
-- Possibly redo foliage colors from vanilla textures?
 
 AFTER RELEASE
 - Crops

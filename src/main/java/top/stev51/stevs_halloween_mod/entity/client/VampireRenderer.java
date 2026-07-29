@@ -6,7 +6,6 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import top.stev51.stevs_halloween_mod.HalloweenMod;
-import top.stev51.stevs_halloween_mod.entity.custom.GhostEntity;
 import top.stev51.stevs_halloween_mod.entity.custom.VampireEntity;
 
 public class VampireRenderer extends HumanoidMobRenderer<VampireEntity, HumanoidModel<VampireEntity>> {
