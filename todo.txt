@@ -1,7 +1,7 @@
 BEFORE RELEASE
 - Food textures
 - Mob textures
-- Title screen background
+- More splashes
 
 AFTER RELEASE
 - Crops
@@ -33,3 +33,4 @@ AFTER RELEASE
         - Cowboy
 - Music discs?
 - Custom "Devil Pitchfork" variant of Trident?
+- Apple Leaves drop more apples on break/decay
