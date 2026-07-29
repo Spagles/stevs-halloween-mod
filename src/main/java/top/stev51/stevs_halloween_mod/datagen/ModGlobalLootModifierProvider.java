@@ -51,6 +51,94 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
         ));
 
+        add("candy_to_zombie_villager", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/zombie_villager")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_husk", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/husk")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_drowned", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/drowned")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_skeleton", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/skeleton")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_stray", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/stray")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_bogged", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/bogged")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_wither_skeleton", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/wither_skeleton")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_spider", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/spider")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_cave_spider", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/cave_spider")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_witch", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/witch")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
+        add("candy_to_ghast", new AddTableLootModifier(
+                new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/ghast")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.5f).build()
+                },
+                ModLootTableProvider.TABLE_KEYS.get("candy_loot_table")
+        ));
+
     }
 
 }

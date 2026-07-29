@@ -1,7 +1,6 @@
 BEFORE RELEASE
 - Food textures
 - Mob textures
-- Candy drop loot tables
 - Title screen background
 - Splash texts?
 - Possibly redo foliage colors from vanilla textures?
