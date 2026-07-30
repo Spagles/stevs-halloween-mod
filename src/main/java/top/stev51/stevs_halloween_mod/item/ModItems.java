@@ -73,11 +73,11 @@ public class ModItems {
     // Spawn Eggs
 
     public static final DeferredItem<Item> GHOST_SPAWN_EGG = ITEMS.register("ghost_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.GHOST, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.GHOST, 0xFFBAE3E8, 0xFF282828, new Item.Properties())
     );
 
     public static final DeferredItem<Item> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.VAMPIRE, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.VAMPIRE, 0xFF002C40, 0xFFDF2F4E, new Item.Properties())
     );
 
     public static final DeferredItem<Item> WEREWOLF_SPAWN_EGG = ITEMS.register("werewolf_spawn_egg",
@@ -89,7 +89,7 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> MUMMY_SPAWN_EGG = ITEMS.register("mummy_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.MUMMY, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.MUMMY, 0xFFD1BF97, 0xFF403428, new Item.Properties())
     );
 
     public static final DeferredItem<Item> DEVIL_SPAWN_EGG = ITEMS.register("devil_spawn_egg",

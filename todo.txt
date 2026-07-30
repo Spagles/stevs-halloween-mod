@@ -11,10 +11,7 @@ BEFORE RELEASE
     - Werewolf
 - Spawn Egg Colors
     - Devil
-    - Ghost
     - Monster
-    - Mummy
-    - Vampire
     - Werewolf
 
 AFTER RELEASE
