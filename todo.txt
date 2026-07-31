@@ -1,8 +1,6 @@
 BEFORE RELEASE
 - Food textures
-    - Gumdrop
     - Hard Candy
-    - Lollipop
 - Mob textures
     - Devil
     - Monster
