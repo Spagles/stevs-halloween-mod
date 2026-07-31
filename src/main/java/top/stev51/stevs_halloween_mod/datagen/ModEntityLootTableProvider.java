@@ -18,12 +18,12 @@ public class ModEntityLootTableProvider extends EntityLootSubProvider {
     @Override
     public void generate() {
 
-        add(ModEntities.GHOST.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
-        add(ModEntities.VAMPIRE.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
-        add(ModEntities.WEREWOLF.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
-        add(ModEntities.FRANKENSTEIN.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
-        add(ModEntities.MUMMY.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
-        add(ModEntities.DEVIL.get(), ModLootTableProvider.CANDY_LOOT_TABLE);
+        add(ModEntities.GHOST.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
+        add(ModEntities.VAMPIRE.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
+        add(ModEntities.WEREWOLF.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
+        add(ModEntities.FRANKENSTEIN.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
+        add(ModEntities.MUMMY.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
+        add(ModEntities.DEVIL.get(), ModLootTableProvider.HALLOWEEN_MOB_CANDY_LOOT_TABLE);
 
     }
 
