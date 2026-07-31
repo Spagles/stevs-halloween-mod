@@ -85,7 +85,7 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> WEREWOLF_SPAWN_EGG = ITEMS.register("werewolf_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.WEREWOLF, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.WEREWOLF, 0xFF684231, 0xFF911A0F, new Item.Properties())
     );
 
     public static final DeferredItem<Item> FRANKENSTEIN_SPAWN_EGG = ITEMS.register("frankenstein_spawn_egg",

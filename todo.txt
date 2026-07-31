@@ -2,11 +2,9 @@ BEFORE RELEASE
 - Mob textures
     - Devil
     - Monster
-    - Werewolf
 - Spawn Egg Colors
     - Devil
     - Monster
-    - Werewolf
 
 AFTER RELEASE
 - Crops
