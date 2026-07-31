@@ -89,7 +89,7 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> FRANKENSTEIN_SPAWN_EGG = ITEMS.register("frankenstein_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.FRANKENSTEIN, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.FRANKENSTEIN, 0xFF60935B, 0xFF2C2E33, new Item.Properties())
     );
 
     public static final DeferredItem<Item> MUMMY_SPAWN_EGG = ITEMS.register("mummy_spawn_egg",
