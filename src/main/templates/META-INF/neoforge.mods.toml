@@ -47,7 +47,7 @@ authors="Stev51"
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Happy Halloween!!!
-This mod adds a bit of spooky spirit to Minecraft with autumn colors, spooky mobs, festive food items, and more!
+This mod adds a bit of Halloween spirit to Minecraft with autumn colors, spooky mobs, festive food items, and more!
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
