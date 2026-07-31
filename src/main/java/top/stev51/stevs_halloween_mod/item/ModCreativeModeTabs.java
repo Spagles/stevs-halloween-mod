@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LOLLIPOP);
                         output.accept(ModItems.PEANUT_BUTTER_CUP);
                         output.accept(ModItems.SUGAR_COOKIE);
+                        output.accept(ModItems.FROSTED_SUGAR_COOKIE);
                         output.accept(ModItems.TOASTED_PUMPKIN_SEEDS);
 
                         // Items - Misc

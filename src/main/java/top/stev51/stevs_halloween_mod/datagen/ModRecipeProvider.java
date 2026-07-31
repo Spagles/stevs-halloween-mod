@@ -30,6 +30,24 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_sugar", has(Items.SUGAR))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.FROSTED_SUGAR_COOKIE.get(), 8)
+                .pattern(" M ")
+                .pattern("WSW")
+                .define('M', Items.MILK_BUCKET)
+                .define('W', Items.WHEAT)
+                .define('S', Items.SUGAR)
+                .unlockedBy("has_sugar", has(Items.SUGAR))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.FROSTED_SUGAR_COOKIE.get(), 8)
+                .pattern("CCC")
+                .pattern("CMC")
+                .pattern("CCC")
+                .define('M', Items.MILK_BUCKET)
+                .define('C', ModItems.SUGAR_COOKIE)
+                .unlockedBy("has_sugar", has(Items.SUGAR))
+                .save(recipeOutput, "frosted_sugar_cookie_from_sugar_cookie");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CARAMEL_APPLE.get(), 1)
                 .pattern("C")
                 .pattern("A")

@@ -42,6 +42,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.SUGAR_COOKIE))
     );
 
+    public static final DeferredItem<Item> FROSTED_SUGAR_COOKIE = ITEMS.register("frosted_sugar_cookie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.FROSTED_SUGAR_COOKIE))
+    );
+
     public static final DeferredItem<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHOCOLATE_BAR))
     );

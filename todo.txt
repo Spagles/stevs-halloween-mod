@@ -7,7 +7,6 @@ BEFORE RELEASE
     - Devil
     - Monster
     - Werewolf
-- Add Frosted Sugar Cookie?
 
 AFTER RELEASE
 - Crops
