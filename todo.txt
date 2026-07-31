@@ -1,6 +1,4 @@
 BEFORE RELEASE
-- Food textures
-    - Hard Candy
 - Mob textures
     - Devil
     - Monster
@@ -9,6 +7,7 @@ BEFORE RELEASE
     - Devil
     - Monster
     - Werewolf
+- Add Frosted Sugar Cookie?
 
 AFTER RELEASE
 - Crops
