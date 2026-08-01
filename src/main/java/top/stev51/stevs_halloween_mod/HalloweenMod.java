@@ -65,7 +65,7 @@ public class HalloweenMod {
         ;
     }
 
-    @EventBusSubscriber(modid=MOD_ID, value=Dist.CLIENT)
+    @EventBusSubscriber(modid=MOD_ID, value=Dist.CLIENT, bus=EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
 
         @SubscribeEvent
