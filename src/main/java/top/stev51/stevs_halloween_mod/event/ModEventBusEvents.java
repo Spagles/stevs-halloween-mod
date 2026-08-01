@@ -12,7 +12,7 @@ import top.stev51.stevs_halloween_mod.HalloweenMod;
 import top.stev51.stevs_halloween_mod.entity.ModEntities;
 import top.stev51.stevs_halloween_mod.entity.custom.*;
 
-@EventBusSubscriber(modid=HalloweenMod.MOD_ID)
+@EventBusSubscriber(modid=HalloweenMod.MOD_ID, bus=EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents {
 
     @SubscribeEvent
