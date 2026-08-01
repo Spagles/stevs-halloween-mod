@@ -43,88 +43,93 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
 
 
+        ResourceKey<LootTable> vanillaCandyTable = ResourceKey.create(
+                Registries.LOOT_TABLE,
+                ResourceLocation.fromNamespaceAndPath(HalloweenMod.MOD_ID, "vanilla_mob_candy_loot_table")
+        );
+
         add("candy_to_zombie", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/zombie")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_zombie_villager", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/zombie_villager")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_husk", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/husk")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_drowned", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/drowned")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_skeleton", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/skeleton")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_stray", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/stray")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_bogged", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/bogged")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_wither_skeleton", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/wither_skeleton")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_spider", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/spider")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_cave_spider", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/cave_spider")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_witch", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/witch")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
         add("candy_to_ghast", new AddTableLootModifier(
                 new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/ghast")).build()
                 },
-                ModLootTableProvider.TABLE_KEYS.get("vanilla_mob_candy_loot_table")
+                vanillaCandyTable
         ));
 
     }
