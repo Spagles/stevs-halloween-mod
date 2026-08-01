@@ -60,13 +60,15 @@ public class AppleLeavesBlock extends LeavesBlock implements BonemealableBlock {
 
         if (growth) {
 
-            int i = 1 + level.random.nextInt(3);
-            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.APPLE, i));
-            level.playSound(null, pos, SoundEvents.CAVE_VINES_PICK_BERRIES, SoundSource.BLOCKS, 1f, 0.8f + level.random.nextFloat() * 0.4f);
+            if (!level.isClientSide) {
+                int i = 1 + level.random.nextInt(3);
+                ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.APPLE, i));
+                level.playSound(null, pos, SoundEvents.CAVE_VINES_PICK_BERRIES, SoundSource.BLOCKS, 1f, 0.8f + level.random.nextFloat() * 0.4f);
 
-            BlockState blockstate = state.setValue(AGE, 0);
-            level.setBlockAndUpdate(pos, blockstate);
-            level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, blockstate));
+                BlockState blockstate = state.setValue(AGE, 0);
+                level.setBlockAndUpdate(pos, blockstate);
+                level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, blockstate));
+            }
 
             return InteractionResult.sidedSuccess(level.isClientSide);
 
@@ -86,6 +88,12 @@ public class AppleLeavesBlock extends LeavesBlock implements BonemealableBlock {
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
 
+        if (this.decaying(state)) {
+            dropResources(state, level, pos);
+            level.removeBlock(pos, false);
+            return;
+        }
+
         int age = state.getValue(AGE);
         boolean growth = (age == MAX_AGE);
 
@@ -93,11 +101,6 @@ public class AppleLeavesBlock extends LeavesBlock implements BonemealableBlock {
             BlockState blockstate = state.setValue(AGE, age + 1);
             level.setBlockAndUpdate(pos, blockstate);
             level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(blockstate));
-        }
-
-        if (this.decaying(state)) {
-            dropResources(state, level, pos);
-            level.removeBlock(pos, false);
         }
 
     }
