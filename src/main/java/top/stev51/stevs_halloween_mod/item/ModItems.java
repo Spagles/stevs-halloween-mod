@@ -97,7 +97,7 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> DEVIL_SPAWN_EGG = ITEMS.register("devil_spawn_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.DEVIL, 0xffffff, 0xffffff, new Item.Properties())
+            () -> new DeferredSpawnEggItem(ModEntities.DEVIL, 0xFFAF2A18, 0XFF473333, new Item.Properties())
     );
 
 
